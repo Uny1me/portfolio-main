@@ -78,7 +78,30 @@ body {
   line-height: 3rem;
   color: #6e6e6e;
 }
-
+/* Custom class */
+.d-flex {
+  display: flex !important;
+}
+.flex-column {
+  flex-direction: column !important;
+}
+.flex-wrap {
+  flex-wrap: wrap !important;
+}
+@media (min-width: 992px) { 
+  .flex-lg-row {
+    flex-direction: row !important;
+  }
+}
+.align-items-center {
+  align-items: center !important;
+}
+.justify-content-center {
+  justify-content: center !important;
+}
+.justify-content-between {
+  justify-content: space-between !important;
+}
 /**
  * links - (_document-setup.scss)
  * -------------------------------------------------------------------
@@ -1007,7 +1030,7 @@ input::-moz-focus-inner {
 }
 .skill-bars li {
   height: 0.6rem;
-  background: #a1a1a1;
+  /* background: #a1a1a1; */
   width: 100%;
   margin-bottom: 6rem;
   padding: 0;
@@ -1905,6 +1928,7 @@ header .logo a {
   position: relative;
   overflow: hidden;
 }
+
 #portfolio .folio-item img {
   vertical-align: middle;
   -moz-transition: all 0.5s ease-in-out;
@@ -1972,7 +1996,9 @@ header .logo a {
   -ms-transform: scale(1.05);
   transform: scale(1.05);
 }
-
+.portfolio-content {
+  text-transform: uppercase !important;
+}
 /**
  * responsive:
  * portfolio

@@ -454,6 +454,12 @@ textarea {
 .col-1-2 {
 	width: 50%;
 }
+@media (min-width: 992px) {
+	.col-lg-six,
+	.col-lg-1-2 {
+		width: 50% !important;
+	}	
+}
 
 .col-seven {
 	width: 58.33333%;
