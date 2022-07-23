@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+
+
+
+    <body>
+        <h1>Medium Posts</h1>
+
+        <div class="pt-5">
+            <button onClick="getRes()" class="btn btn-danger">GET</button>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script>
+            // GET REQUEST
+            const myHeaders = new Headers();
+            myHeaders.append("Content-Type", "application/json");
+            const requestOptions = {
+                method: "get",
+                headers: myHeaders,
+                redirect: "follow",
+            };
+
+            function getRes() {
+                axios({
+                    method: 'get',
+                    url: 'https://v1.nocodeapi.com/unyime/medium/VLMopwXAxrYUMmul'
+                }, requestOptions)
+                    .then(({ data }) => {
+                        console.log(data)
+                        // However I do not want the HNG Internship Article
+                        var newArray = data.filter(function (el) {
+                            return el.created !== 1629120670000
+                        }
+                        );
+                        console.log(newArray);
+
+                    })
+                    .catch(error => console.error(error));
+            }
+// Usually you output res i.e. response to the console but to get data Object we use res.data
+
+        </script>
+    </body>
+
+
+</html>

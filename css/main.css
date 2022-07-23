@@ -2735,4 +2735,21 @@ footer .copyright span:last-child::after {
   background: #000000;
 }
 
+/* Swiper Slider */
+#articles {
+  background-color: white;
+}
+.swiper {
+  width: 100%;
+  height: 300px;
+}
+.swiper-button-prev::after {
+  display: none !important;
+}
+.swiper-button-next::after {
+  content: "\21E8" !important;
+  color: #000 !important;
+  font-size: 2em !important;
+}
+
 /*# sourceMappingURL=main.css.map */
