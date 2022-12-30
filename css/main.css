@@ -2293,6 +2293,7 @@ header .logo a {
   font-size: 5.4rem;
   color: #e7530b;
 }
+
 .services-list h3 {
   color: #ffffff;
 }
@@ -2785,5 +2786,13 @@ footer .copyright span:last-child::after {
   color: #000 !important;
   font-size: 2em !important;
 }
-
+.btn-orange {
+  background-color: #e7530b;
+  color: white;
+  margin: 0 auto;
+}
+.btn-orange:hover {
+  opacity: 0.9 !important;
+  color: white;
+}
 /*# sourceMappingURL=main.css.map */
