@@ -1358,7 +1358,7 @@ header .logo a {
 /* dropdown nav */
 .main-navigation {
   background: #000000;
-  padding: 24px 30px 42px;
+  padding: 24px 20px 42px;
   margin: 0;
   width: 100%;
   height: auto;
@@ -2004,6 +2004,16 @@ header .logo a {
 .portfolio-content {
   text-transform: uppercase !important;
 }
+.portfolio-content img {
+  /* margin-bottom: 2rem; */
+}
+
+@media (min-width: 992px) {
+  .portfolio-content img {
+    min-height: 458px;
+    object-fit: contain;
+  }
+}
 /**
  * responsive:
  * portfolio
@@ -2290,6 +2300,24 @@ header .logo a {
   color: rgba(255, 255, 255, 0.6);
 }
 
+#articles h5 {
+  font-size: 12px !important;
+}
+
+#articles #owl-slider {
+  padding: 2rem 0;
+}
+
+#articles {
+  padding: 12rem 0;
+}
+
+@media (min-width: 700px) {
+  #articles .owl-item {
+    margin: 0 1rem;
+  }
+}
+
 /* pagination */
 .owl-pagination {
   text-align: center;
@@ -2306,7 +2334,7 @@ header .logo a {
   margin: 1.2rem 0.8rem 0 0.8rem;
   border-radius: 50%;
   display: inline-block;
-  background: #ffffff;
+  background: rgba(0, 0, 0, 0.1);
 }
 .owl-theme .owl-controls .owl-page.active span {
   background: #e7530b;
@@ -2744,9 +2772,10 @@ footer .copyright span:last-child::after {
 #articles {
   background-color: white;
 }
+
 .swiper {
   width: 100%;
-  height: 300px;
+  height: 341px;
 }
 .swiper-button-prev::after {
   display: none !important;
